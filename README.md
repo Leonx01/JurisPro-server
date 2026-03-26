@@ -10,7 +10,11 @@
 - 🔍 **知识检索** - 基于 Elasticsearch 的向量检索
 - 📋 **菜单权限** - 动态菜单与角色权限绑定
 
+<img width="501" height="501" alt="chat" src="https://github.com/user-attachments/assets/b01d82bf-494a-4fc9-a05d-ed3b0508f5af" />
+
 ## 🛠️ 技术栈
+
+
 
 - **框架**: FastAPI + Uvicorn
 - **数据库**: MySQL + SQLAlchemy ORM
