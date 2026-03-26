@@ -1,0 +1,56 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info
+.eggs
+*.egg
+
+# Virtual environment
+venv
+env
+.venv
+ENV
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# Environment files
+.env
+src/.env
+.env.*
+
+# Tests
+tests/
+.pytest_cache
+.coverage
+htmlcov
+
+# Documentation
+*.md
+!README.md
+
+# Data & uploads (large files)
+uploads/*
+src/data/bge-small-zh-v1.5-ft
+
+# Database backups
+*.sql
+backup.sql
+
+# Certificates
+*.crt
+certs/
+
+# OS files
+.DS_Store
+Thumbs.db
