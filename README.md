@@ -1,6 +1,7 @@
 # JurisPro
 
-基于 FastAPI 的智能法律助手系统，集成大语言模型能力，支持文档管理、智能问答、知识检索等功能。
+基于 FastAPI + LangChain + ElasticSearch 的智能法律助手系统，集成大语言模型能力，支持知识库管理、智能问答、知识检索等功能。
+<img width="501" height="501" alt="chat" src="https://github.com/user-attachments/assets/b01d82bf-494a-4fc9-a05d-ed3b0508f5af" />
 
 ## ✨ 功能特性
 
@@ -8,11 +9,9 @@
 - 💬 **智能法律问答** - 基于 LangChain 搭建 RAG 流水线，构建“法学三段论”式思维链 Prompt 引导生成，幻觉率下降 30%
 - 🔍 **知识检索机制** - 沉淀 923 部法律、4.5 万+法律知识条目，构建父子索引的层级化知识库；引入 Query Rewrite 对齐语义；基于 Elasticsearch 实现语义 + 关键字混合检索，并结合 RRF 重排提升召回与排序效果
 - 🧠 **嵌入模型微调** - 基于自建法律语料对 BGE-v1.5 Embedding 模型微调：Recall@1 提升 9.6%（至 82.1%），MRR@10 提升 7.2%（至 87.7%）
-- ⚡ **高效数据缓存** - 首轮问题语义匹配命中 FAQ，减少模型调用与响应耗时；结合 Redis 缓存热点��据，整体响应延迟降低 80%
+- ⚡ **高效数据缓存** - 首轮问题语义匹配命中 FAQ，减少模型调用与响应耗时；结合 Redis 缓存热点数据，整体响应延迟降低 ;
 - 🔄 **异步知识更新** - 采用 Logstash 实现 MySQL 增量同步；通过版本覆盖解决 Elasticsearch 幂等更新与碎片残留问题，保障数据一致性
-- 📄 **文档管理** - 法律文书生成与管理
 
-<img width="501" height="501" alt="chat" src="https://github.com/user-attachments/assets/b01d82bf-494a-4fc9-a05d-ed3b0508f5af" />
 
 ## 🛠️ 技术栈
 
